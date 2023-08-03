@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator@CodeWithHritujeet</title>
+</head>
+<body class="bg-gray-800 text-white">
+    <div class="container mx-auto py-2 px-4">
+        <span class="text-4xl cursor-default grid my-2 font-semibold">iCalculate | <span class="font-light">Solve Expressions on Web</span></span> 
+        <textarea class="my-4 w-full md:h-12 h-8 text-right resize-none mx-auto px-6 bg-transparent rounded-lg md:text-4xl text-xl" id="inp" placeholder="Expression appear here" disabled></textarea>
+
+        <div class="grid grid-cols-4 grid-rows-5 gap-4 text-lg font-medium">
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">AC</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">+</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">/</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">*</button>
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">7</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">8</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">9</button>
+
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">-</button>
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">4</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">5</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">6</button>
+
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">.</button>
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">1</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">2</button>
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">3</button>
+
+
+            <button class="bg-indigo-400 rounded-full h-16 w-auto  active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">0</button>
+        </div>
+        <button class="bg-indigo-400 rounded-full h-10 w-full active:bg-indigo-500 duration-300 focus:ring-4 focus:ring-gray-400 focus:ring-offset-4">Evaluate</button>
+    </div>
+</body>
+<script>
+    let a = document.getElementsByTagName('button');
+    for (const btn of a) {
+        btn.className += " btn"
+    }
+</script>
+
+<script src="js/script.js"></script>
+</html>
